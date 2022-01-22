@@ -7,4 +7,4 @@ const app = http.createServer((req, res)=>{
     res.end();
 })
 
-app.listen(5000, ()=> console.log("Simple Node created at port 5000"))
+app.listen(process.env.PORT || 5000, ()=> console.log("Simple Node created at port 5000"))

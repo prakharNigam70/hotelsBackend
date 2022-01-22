@@ -10,4 +10,4 @@ router.get('/a', (req,res)=> {
 
 app.use(router)
 
-app.listen(5001, ()=> console.log("Express server created"))
+app.listen(process.env.PORT || 5000, ()=> console.log("Express server created"))

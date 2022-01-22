@@ -11,5 +11,5 @@ router.get('/a', (context)=>{
 
 app.use(router.routes())
 
-app.listen(5000, ()=> console.log("Koa server created at port 5000"))
+app.listen(process.env.PORT || 5000, ()=> console.log("Koa server created at port 5000"))
 
