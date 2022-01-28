@@ -10,7 +10,7 @@
     "simpleDb" : "ts-node-dev simpleDb.ts",
     "simpleOrm" : "ts-node-dev simpleOrm.ts",
     "simpleGraphql" : "ts-node-dev simpleGraphql.ts",
-    "start": "ts-node-dev simpleKoa.ts"
+    "start": "ts-node-dev simpleGraphql.ts"
 
   },
   "keywords": [],
