@@ -16,7 +16,7 @@ async function main() {
     router.get("/graphql", graphqlHttp({schema : schema}))
     app.use(router.routes())
     app.use(cors());
-    app.listen(5000, ()=> console.log("Simple koa graphql server created at port 5000"))
+    app.listen(process.env.PORT || 5000, ()=> console.log("Simple koa graphql server created at port 5000"))
 }
 
 main();
